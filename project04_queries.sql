@@ -32,7 +32,7 @@
 # A query to create a person record
 #INSERT INTO Persons VALUES ('1001d','C', NULL, 'Kornbluh', 'Sarah','1226 P Street','Lincoln','NE','68508','USA', 'skornbluh@gmail.com', NULL, NULL, NULL, NULL);
 	SET SQL_SAFE_UPDATES = 0;
-    DELETE FROM Emails where Emails.id = '1' or '2';
+    DELETE FROM Emails where Emails.id in ( '1', '2');
     DELETE FROM Portfolios where Portfolios.id = 'PT001';
 	DELETE FROM Persons where Persons.id = '944c';
 	SET SQL_SAFE_UPDATES = 1;
