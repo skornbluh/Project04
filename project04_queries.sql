@@ -31,18 +31,28 @@
 #
 # A query to get all the assets in a particular portfolio
 #
-select 
-	assets.id, assets.account_type, assets.label, assets.apr, assets.total_balance, assets.base_rate_of_return, assets.quarterly_dividend, assets.omega_measure, assets.percentage
-	from assets, portfolios 
-    where assets.id = portfolios.account_id and portfolios.id = 'PF002';
+#select 
+#	assets.id, assets.account_type, assets.label, assets.apr, assets.total_balance, assets.base_rate_of_return, assets.quarterly_dividend, assets.omega_measure, assets.percentage
+#	from assets, portfolios 
+  #  where assets.id = portfolios.account_id and portfolios.id = 'PF002';
+  
 # A query to get all the assets of a particular person
+
 # A query to create a new asset record
+#INSERT INTO Assets VALUES('SVEMNY','D','Savings Account','0.5#', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
 # A query to create a new portfolio record
+INSERT INTO Portfolios VALUES('SK3497','kdoame','394','4slbd','495KK');
+
 # A query to associate a particular asset with a particular portfolio
+
 # A query to find the total number of portfolios owned by each person
+
 # A query to find the total number of portfolios managed by each person
+
 # A query to find the total value of all stocks in each portfolio (hint: you can take an
 # aggregate of a mathematical expression)
+
 # A query to detect an invalid distribution of private investment assets (that is, a query
 # to add up the stake percentage of each such asset and return a list of investments
 # whose percentage exceeds 100%)
