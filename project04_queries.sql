@@ -11,7 +11,7 @@
 #
 # A query to add an email to a specific person
 #
-	INSERT INTO Emails (person_id, email_address) VALUES ('123lst','skornbluh@gmail.com');
+	INSERT INTO Emails (id, person_id, email_address) VALUES ('30','123lst','skornbluh@gmail.com');
 	select * from Emails where person_id = '123lst';
 
 #
@@ -20,9 +20,9 @@
 
 	UPDATE Emails
 	SET email_address = 'tinyrick@pleasehelpme.com'
-	WHERE person_id = '944c' and id = 1;
+	WHERE person_id = '944c' and id = '1';
 
-	select * from Emails where id = 1;
+	select * from Emails where id = '1';
 
 #
 # A query (or series of queries) to remove a given person record
